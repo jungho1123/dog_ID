@@ -1,0 +1,7 @@
+[Epoch 1] Loss: 0.0359 | Val F1: 0.8143 | AUC: 0.9806 | Time: 637.0s
+[Epoch 2] Loss: 0.0158 | Val F1: 0.8601 | AUC: 0.9865 | Time: 636.7s
+[Epoch 3] Loss: 0.0110 | Val F1: 0.8721 | AUC: 0.9920 | Time: 636.0s
+[Epoch 4] Loss: 0.0085 | Val F1: 0.8927 | AUC: 0.9944 | Time: 636.1s
+[Epoch 5] Loss: 0.0064 | Val F1: 0.9007 | AUC: 0.9952 | Time: 636.7s
+
+Total training time: 3184.8 seconds

@@ -1,0 +1,27 @@
+ # Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.so
+
+# 모델 체크포인트 / 로그
+checkpoints/
+*.pth
+*.pt
+*.log
+
+# 환경 변수 파일
+.env
+
+# VSCode
+.vscode/
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+
+# 기타
+*.zip
+*.tar.gz
+*.npy
+*.ipynb

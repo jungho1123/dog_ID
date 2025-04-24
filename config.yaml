@@ -1,0 +1,40 @@
+dataset:
+  image_root: data
+  image_size: 224
+  pair_csv: data/mini/train.csv
+  val_csv: data/mini/val.csv
+
+experiment:
+  device: cuda
+  name: dog_nose_cosine
+  seed: 42
+
+log:
+  print_every: 10
+  use_wandb: false
+
+model:
+  name: seresnext50_plain
+  in_features: 2048
+  feature_dim: 512
+  pretrained: true
+
+save:
+  save_dir: checkpoints/
+  save_name: seresnext50_plain.pth
+
+train:
+  batch_size: 48
+  epochs: 10
+  learning_rate: 0.0001
+  margin: 0.6
+  num_workers: 4
+  weight_decay: 0.0001
+
+visualization:
+  prefix: norm_            # raw_ : PCA / UMAP / feature std 전용 시각화
+                          # norm_: cosine similarity 기반 시각화 + 성능지표 + confusion matrix 등
+                          # prefix에 따라 저장 파일명에도 자동 반영됨 (덮어쓰기 방지)
+
+  cosine_threshold: 0.7   # 추론 기준 또는 confusion matrix 등 평가용 threshold
+  save_embeddings: true   # z1/z2를 .csv 저장 (각 prefix에 맞게 embeddings_raw.csv, embeddings_normalized.csv 등)

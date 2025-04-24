@@ -1,0 +1,27 @@
+# 딥러닝
+torch>=2.0
+torchvision
+torchaudio
+timm
+
+# 데이터 처리
+numpy
+pandas
+scikit-learn
+opencv-python
+Pillow
+pyyaml
+albumentations
+seaborn
+matplotlib
+tqdm
+
+# 실험 로그
+
+
+# FastAPI 서버 (있는 경우)
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+psycopg2-binary
