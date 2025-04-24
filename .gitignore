@@ -25,3 +25,5 @@ Thumbs.db
 *.tar.gz
 *.npy
 *.ipynb
+# 데이터
+data/
