@@ -7,8 +7,7 @@ from pathlib import Path
 
 CONFIG_PATH = Path("config.yaml")
 BACKBONES = [
-    "resnext50_ibn_custom",
-    "resnext50_plain",
+    "tf_efficientnet_b4",
     "seresnext50_plain",
     "seresnext50_ibn_custom"
 ]

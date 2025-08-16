@@ -53,7 +53,7 @@ class SEResNeXtBottleneck_IBN(nn.Module):
         out = self.conv3(out)
         out = self.bn3(out)
         
-        out = self.se(out)#apply SE after conv3
+        out = self.se(out)
 
         if self.downsample is not None:
             identity = self.downsample(x)

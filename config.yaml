@@ -13,15 +13,19 @@ log:
   print_every: 10
   use_wandb: false
 
+#resnext50_ibn_custom.pth
+#resnext50_plain.pth
+#seresnext50_plain.pth
+#seresnext50_ibn_custom.pth
 model:
-  name: seresnext50_plain
+  name: resnext50_ibn_custom
   in_features: 2048
   feature_dim: 512
   pretrained: true
 
 save:
   save_dir: checkpoints/
-  save_name: seresnext50_plain.pth
+  save_name: seresnext50_ibn_custom.pth
 
 train:
   batch_size: 48
